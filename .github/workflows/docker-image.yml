@@ -14,7 +14,7 @@ on:
 # Yes I named the secret DOCKERHUB_PASSWORD and yes I can't rename it
 # My mistakes haunt me to this day
 env:
-  DOCKER_HUB_REPO: radzo73/test-repo
+  DOCKER_HUB_REPO: test-repo
   USERNAME: ${{ secrets.DOCKER_USERNAME }}
   TOKEN: ${{ secrets.DOCKER_PASSWORD }}
 
