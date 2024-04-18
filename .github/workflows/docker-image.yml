@@ -37,7 +37,7 @@ jobs:
             type=semver,pattern={{major}}.{{minor}}
       - name: Login to DockerHub
         #if: github.event_name != 'pull_request'
-        uses: docker/login-action@v3
+        uses: docker/login-action@v2
         with:
           username: ${{ env.USERNAME }}
           password: ${{ env.TOKEN }}
