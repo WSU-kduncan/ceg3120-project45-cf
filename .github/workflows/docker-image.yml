@@ -15,8 +15,8 @@ on:
 # My mistakes haunt me to this day
 env:
   DOCKER_HUB_REPO: radzo73/test-repo
-  USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-  TOKEN: ${{ secrets.DOCKERHUB_PASSWORD }}
+  USERNAME: ${{ secrets.DOCKER_USERNAME }}
+  TOKEN: ${{ secrets.DOCKER_PASSWORD }}
 
 jobs:
   docker:
