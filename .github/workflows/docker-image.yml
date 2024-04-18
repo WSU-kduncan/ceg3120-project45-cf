@@ -48,11 +48,3 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-      - name: Push to DockerHub
-        # ID is used as a reference, from other jobs or steps
-        id: docker_push
-        uses: docker/build-push-action@v2
-        with:
-          push: true
-          #tags: ${{ env.USERNAME }}/${{ env.DOCKER_HUB_REPO }}:${{ steps.meta.outputs.tags }}
-          tags: ${{ steps.meta.outputs.tags }}
