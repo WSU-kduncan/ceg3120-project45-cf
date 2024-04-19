@@ -56,3 +56,7 @@ WantedBy=multi-user.target
 
 To reload this service, use `sudo systemctl restart webhook`.
 
+## Diagram
+The way things work:
+
+![](./images/CDWorkflow.png)

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "Docker stoppullrestart",
+    "execute-command": "/var/scripts/redeploy.sh",
+    "command-working-directory": "/var/webhook"
+  },
+  {
+    "id": "gotgit",
+    "execute-command": "/var/scripts/redeploy.sh",
+    "command-working-directory": "/var/webhook"
+  }
+]
